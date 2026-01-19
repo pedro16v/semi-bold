@@ -1,0 +1,30 @@
+.env
+.cursor
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build artifacts
+*.zip
+*.dSYM.zip
+*.ipa
+*.app.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+*/build/*

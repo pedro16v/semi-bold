@@ -1,0 +1,30 @@
+INSTALLATION INSTRUCTIONS
+=========================
+
+1. Double-click "Google Docs Semi Bold.app" to launch it once
+   (This registers the extension with Safari)
+
+2. Enable Safari developer features:
+   - Safari → Settings → Advanced
+   - Check "Show Develop menu in menu bar"
+
+3. Allow unsigned extensions:
+   - Develop → Allow Unsigned Extensions
+   - Enter your password if prompted
+
+4. Enable the extension:
+   - Safari → Settings → Extensions
+   - Check the box next to "Google Docs Semi Bold"
+
+5. Test it:
+   - Open a Google Docs document
+   - Select some text
+   - Press Cmd+Ctrl+B
+
+TROUBLESHOOTING
+===============
+- If the extension doesn't appear, try restarting Safari
+- Make sure you launched the app at least once
+- Verify "Allow Unsigned Extensions" is enabled
+- If you see "App is damaged" error, run:
+  xattr -cr "Google Docs Semi Bold.app"

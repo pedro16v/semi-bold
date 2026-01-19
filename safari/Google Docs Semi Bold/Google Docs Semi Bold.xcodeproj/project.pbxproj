@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBCAE16C2F19D1D200F271B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAE16B2F19D1D200F271B8 /* AppDelegate.swift */; };
+		EBCAE1702F19D1D200F271B8 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE16E2F19D1D200F271B8 /* Main.html */; };
+		EBCAE1722F19D1D200F271B8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1712F19D1D200F271B8 /* Icon.png */; };
+		EBCAE1742F19D1D200F271B8 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1732F19D1D200F271B8 /* Style.css */; };
+		EBCAE1762F19D1D200F271B8 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1752F19D1D200F271B8 /* Script.js */; };
+		EBCAE1782F19D1D200F271B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAE1772F19D1D200F271B8 /* ViewController.swift */; };
+		EBCAE17B2F19D1D200F271B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1792F19D1D200F271B8 /* Main.storyboard */; };
+		EBCAE17D2F19D1D300F271B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE17C2F19D1D300F271B8 /* Assets.xcassets */; };
+		EBCAE1842F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBCAE1892F19D1D300F271B8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAE1882F19D1D300F271B8 /* SafariWebExtensionHandler.swift */; };
+		EBCAE19C2F19D1D400F271B8 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1952F19D1D400F271B8 /* background.js */; };
+		EBCAE19D2F19D1D400F271B8 /* TESTING.md in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1962F19D1D400F271B8 /* TESTING.md */; };
+		EBCAE19E2F19D1D400F271B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1972F19D1D400F271B8 /* README.md */; };
+		EBCAE19F2F19D1D400F271B8 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1982F19D1D400F271B8 /* icons */; };
+		EBCAE1A02F19D1D400F271B8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1992F19D1D400F271B8 /* manifest.json */; };
+		EBCAE1A12F19D1D400F271B8 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE19A2F19D1D400F271B8 /* content.js */; };
+		EBCAE1A22F19D1D400F271B8 /* REVIEW.md in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE19B2F19D1D400F271B8 /* REVIEW.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBCAE1852F19D1D300F271B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBCAE1602F19D1D200F271B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBCAE1822F19D1D300F271B8;
+			remoteInfo = "Google Docs Semi Bold Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBCAE1902F19D1D300F271B8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBCAE1842F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EBCAE1682F19D1D200F271B8 /* Google Docs Semi Bold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Docs Semi Bold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCAE16B2F19D1D200F271B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBCAE16F2F19D1D200F271B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		EBCAE1712F19D1D200F271B8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EBCAE1732F19D1D200F271B8 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EBCAE1752F19D1D200F271B8 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EBCAE1772F19D1D200F271B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBCAE17A2F19D1D200F271B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBCAE17C2F19D1D300F271B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBCAE17E2F19D1D300F271B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Google Docs Semi Bold Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCAE1882F19D1D300F271B8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EBCAE18A2F19D1D300F271B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCAE1952F19D1D400F271B8 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		EBCAE1962F19D1D400F271B8 /* TESTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = TESTING.md; path = Resources/TESTING.md; sourceTree = "<group>"; };
+		EBCAE1972F19D1D400F271B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Resources/README.md; sourceTree = "<group>"; };
+		EBCAE1982F19D1D400F271B8 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		EBCAE1992F19D1D400F271B8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		EBCAE19A2F19D1D400F271B8 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		EBCAE19B2F19D1D400F271B8 /* REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = REVIEW.md; path = Resources/REVIEW.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBCAE1652F19D1D200F271B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCAE1802F19D1D300F271B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBCAE15F2F19D1D200F271B8 = {
+			isa = PBXGroup;
+			children = (
+				EBCAE16A2F19D1D200F271B8 /* Google Docs Semi Bold */,
+				EBCAE1872F19D1D300F271B8 /* Google Docs Semi Bold Extension */,
+				EBCAE1692F19D1D200F271B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBCAE1692F19D1D200F271B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAE1682F19D1D200F271B8 /* Google Docs Semi Bold.app */,
+				EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBCAE16A2F19D1D200F271B8 /* Google Docs Semi Bold */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAE16B2F19D1D200F271B8 /* AppDelegate.swift */,
+				EBCAE1772F19D1D200F271B8 /* ViewController.swift */,
+				EBCAE1792F19D1D200F271B8 /* Main.storyboard */,
+				EBCAE17C2F19D1D300F271B8 /* Assets.xcassets */,
+				EBCAE17E2F19D1D300F271B8 /* Info.plist */,
+				EBCAE16D2F19D1D200F271B8 /* Resources */,
+			);
+			path = "Google Docs Semi Bold";
+			sourceTree = "<group>";
+		};
+		EBCAE16D2F19D1D200F271B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAE16E2F19D1D200F271B8 /* Main.html */,
+				EBCAE1712F19D1D200F271B8 /* Icon.png */,
+				EBCAE1732F19D1D200F271B8 /* Style.css */,
+				EBCAE1752F19D1D200F271B8 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBCAE1872F19D1D300F271B8 /* Google Docs Semi Bold Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAE1942F19D1D400F271B8 /* Resources */,
+				EBCAE1882F19D1D300F271B8 /* SafariWebExtensionHandler.swift */,
+				EBCAE18A2F19D1D300F271B8 /* Info.plist */,
+			);
+			path = "Google Docs Semi Bold Extension";
+			sourceTree = "<group>";
+		};
+		EBCAE1942F19D1D400F271B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBCAE1952F19D1D400F271B8 /* background.js */,
+				EBCAE1962F19D1D400F271B8 /* TESTING.md */,
+				EBCAE1972F19D1D400F271B8 /* README.md */,
+				EBCAE1982F19D1D400F271B8 /* icons */,
+				EBCAE1992F19D1D400F271B8 /* manifest.json */,
+				EBCAE19A2F19D1D400F271B8 /* content.js */,
+				EBCAE19B2F19D1D400F271B8 /* REVIEW.md */,
+			);
+			name = Resources;
+			path = "Google Docs Semi Bold Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBCAE1672F19D1D200F271B8 /* Google Docs Semi Bold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCAE1912F19D1D300F271B8 /* Build configuration list for PBXNativeTarget "Google Docs Semi Bold" */;
+			buildPhases = (
+				EBCAE1642F19D1D200F271B8 /* Sources */,
+				EBCAE1652F19D1D200F271B8 /* Frameworks */,
+				EBCAE1662F19D1D200F271B8 /* Resources */,
+				EBCAE1902F19D1D300F271B8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBCAE1862F19D1D300F271B8 /* PBXTargetDependency */,
+			);
+			name = "Google Docs Semi Bold";
+			packageProductDependencies = (
+			);
+			productName = "Google Docs Semi Bold";
+			productReference = EBCAE1682F19D1D200F271B8 /* Google Docs Semi Bold.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBCAE1822F19D1D300F271B8 /* Google Docs Semi Bold Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCAE18D2F19D1D300F271B8 /* Build configuration list for PBXNativeTarget "Google Docs Semi Bold Extension" */;
+			buildPhases = (
+				EBCAE17F2F19D1D300F271B8 /* Sources */,
+				EBCAE1802F19D1D300F271B8 /* Frameworks */,
+				EBCAE1812F19D1D300F271B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Google Docs Semi Bold Extension";
+			packageProductDependencies = (
+			);
+			productName = "Google Docs Semi Bold Extension";
+			productReference = EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBCAE1602F19D1D200F271B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					EBCAE1672F19D1D200F271B8 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					EBCAE1822F19D1D300F271B8 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = EBCAE1632F19D1D200F271B8 /* Build configuration list for PBXProject "Google Docs Semi Bold" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBCAE15F2F19D1D200F271B8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EBCAE1692F19D1D200F271B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBCAE1672F19D1D200F271B8 /* Google Docs Semi Bold */,
+				EBCAE1822F19D1D300F271B8 /* Google Docs Semi Bold Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBCAE1662F19D1D200F271B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCAE1722F19D1D200F271B8 /* Icon.png in Resources */,
+				EBCAE17B2F19D1D200F271B8 /* Main.storyboard in Resources */,
+				EBCAE1762F19D1D200F271B8 /* Script.js in Resources */,
+				EBCAE1702F19D1D200F271B8 /* Main.html in Resources */,
+				EBCAE17D2F19D1D300F271B8 /* Assets.xcassets in Resources */,
+				EBCAE1742F19D1D200F271B8 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCAE1812F19D1D300F271B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCAE1A12F19D1D400F271B8 /* content.js in Resources */,
+				EBCAE19E2F19D1D400F271B8 /* README.md in Resources */,
+				EBCAE19F2F19D1D400F271B8 /* icons in Resources */,
+				EBCAE1A22F19D1D400F271B8 /* REVIEW.md in Resources */,
+				EBCAE1A02F19D1D400F271B8 /* manifest.json in Resources */,
+				EBCAE19C2F19D1D400F271B8 /* background.js in Resources */,
+				EBCAE19D2F19D1D400F271B8 /* TESTING.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBCAE1642F19D1D200F271B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCAE1782F19D1D200F271B8 /* ViewController.swift in Sources */,
+				EBCAE16C2F19D1D200F271B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCAE17F2F19D1D300F271B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCAE1892F19D1D300F271B8 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBCAE1862F19D1D300F271B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBCAE1822F19D1D300F271B8 /* Google Docs Semi Bold Extension */;
+			targetProxy = EBCAE1852F19D1D300F271B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBCAE16E2F19D1D200F271B8 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBCAE16F2F19D1D200F271B8 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EBCAE1792F19D1D200F271B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBCAE17A2F19D1D200F271B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBCAE18B2F19D1D300F271B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBCAE18C2F19D1D300F271B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EBCAE18E2F19D1D300F271B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Google Docs Semi Bold Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Google Docs Semi Bold Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semibold.Google-Docs-Semi-Bold.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBCAE18F2F19D1D300F271B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z78XGY44D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Google Docs Semi Bold Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Google Docs Semi Bold Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semibold.Google-Docs-Semi-Bold.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EBCAE1922F19D1D300F271B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z78XGY44D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Google Docs Semi Bold/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Google Docs Semi Bold";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semibold.Google-Docs-Semi-Bold";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBCAE1932F19D1D300F271B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Z78XGY44D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Google Docs Semi Bold/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Google Docs Semi Bold";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.semibold.Google-Docs-Semi-Bold";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBCAE1632F19D1D200F271B8 /* Build configuration list for PBXProject "Google Docs Semi Bold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCAE18B2F19D1D300F271B8 /* Debug */,
+				EBCAE18C2F19D1D300F271B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCAE18D2F19D1D300F271B8 /* Build configuration list for PBXNativeTarget "Google Docs Semi Bold Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCAE18E2F19D1D300F271B8 /* Debug */,
+				EBCAE18F2F19D1D300F271B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCAE1912F19D1D300F271B8 /* Build configuration list for PBXNativeTarget "Google Docs Semi Bold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCAE1922F19D1D300F271B8 /* Debug */,
+				EBCAE1932F19D1D300F271B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBCAE1602F19D1D200F271B8 /* Project object */;
+}
