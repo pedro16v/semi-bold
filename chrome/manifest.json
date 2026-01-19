@@ -3,9 +3,6 @@
   "name": "Google Docs Semi Bold Shortcut",
   "version": "1.0.0",
   "description": "Adds Cmd+Ctrl+B keyboard shortcut to apply Semi Bold font weight in Google Docs",
-  "permissions": [
-    "activeTab"
-  ],
   "background": {
     "service_worker": "background.js"
   },
