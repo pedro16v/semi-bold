@@ -17,7 +17,6 @@
 		EBCAE17D2F19D1D300F271B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE17C2F19D1D300F271B8 /* Assets.xcassets */; };
 		EBCAE1842F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EBCAE1892F19D1D300F271B8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAE1882F19D1D300F271B8 /* SafariWebExtensionHandler.swift */; };
-		EBCAE19C2F19D1D400F271B8 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1952F19D1D400F271B8 /* background.js */; };
 		EBCAE19D2F19D1D400F271B8 /* TESTING.md in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1962F19D1D400F271B8 /* TESTING.md */; };
 		EBCAE19E2F19D1D400F271B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1972F19D1D400F271B8 /* README.md */; };
 		EBCAE19F2F19D1D400F271B8 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EBCAE1982F19D1D400F271B8 /* icons */; };
@@ -64,7 +63,6 @@
 		EBCAE1832F19D1D300F271B8 /* Google Docs Semi Bold Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Google Docs Semi Bold Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCAE1882F19D1D300F271B8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		EBCAE18A2F19D1D300F271B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBCAE1952F19D1D400F271B8 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
 		EBCAE1962F19D1D400F271B8 /* TESTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = TESTING.md; path = Resources/TESTING.md; sourceTree = "<group>"; };
 		EBCAE1972F19D1D400F271B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Resources/README.md; sourceTree = "<group>"; };
 		EBCAE1982F19D1D400F271B8 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 		EBCAE1942F19D1D400F271B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EBCAE1952F19D1D400F271B8 /* background.js */,
 				EBCAE1962F19D1D400F271B8 /* TESTING.md */,
 				EBCAE1972F19D1D400F271B8 /* README.md */,
 				EBCAE1982F19D1D400F271B8 /* icons */,
@@ -262,7 +259,6 @@
 				EBCAE19F2F19D1D400F271B8 /* icons in Resources */,
 				EBCAE1A22F19D1D400F271B8 /* REVIEW.md in Resources */,
 				EBCAE1A02F19D1D400F271B8 /* manifest.json in Resources */,
-				EBCAE19C2F19D1D400F271B8 /* background.js in Resources */,
 				EBCAE19D2F19D1D400F271B8 /* TESTING.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +448,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -488,7 +484,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",

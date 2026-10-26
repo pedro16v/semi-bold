@@ -55,12 +55,11 @@ semi-bold/
 ├── chrome/              # Chrome extension files
 │   ├── manifest.json    # Extension configuration
 │   ├── content.js       # Main extension logic
-│   ├── background.js    # Background service worker
 │   └── icons/           # Extension icons
 ├── safari/              # Safari extension (Xcode project)
 │   ├── Google Docs Semi Bold/
 │   │   ├── Google Docs Semi Bold Extension/
-│   │   │   └── Resources/  # Extension files (manifest.json, content.js, icons)
+│   │   │   └── Resources/  # Extension files (manifest.json, icons; content.js symlinks to chrome/content.js)
 │   │   └── Google Docs Semi Bold.xcodeproj/
 │   ├── README.md        # Safari installation instructions
 │   └── TESTING.md       # Safari testing guide
