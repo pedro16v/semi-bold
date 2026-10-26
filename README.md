@@ -1,10 +1,10 @@
 # Semi Bold Browser Extension
 
-Browser extensions for Chrome and Safari that add a keyboard shortcut to quickly apply Semi Bold font weight in Google Docs.
+Browser extensions for Chrome and Safari that add a keyboard shortcut to quickly apply Semi Bold font weight in Google Docs and Google Slides.
 
 ## Overview
 
-This extension enables `Cmd+Ctrl+B` (Mac) to apply Semi Bold formatting to selected text in Google Docs, eliminating the need to navigate through multiple menu clicks.
+This extension enables `Cmd+Ctrl+B` (Mac) to apply Semi Bold formatting to selected text in Google Docs and Google Slides, eliminating the need to navigate through multiple menu clicks.
 
 ## Features
 
@@ -21,7 +21,7 @@ This extension enables `Cmd+Ctrl+B` (Mac) to apply Semi Bold formatting to selec
 2. Enable "Developer mode" in the top-right corner
 3. Click "Load unpacked"
 4. Select the `chrome/` directory from this project
-5. The extension is now active on Google Docs pages
+5. The extension is now active on Google Docs and Google Slides pages
 
 ### Safari
 
@@ -35,7 +35,7 @@ See [Safari README](safari/README.md) for detailed installation instructions.
 
 ## Usage
 
-1. Select text in a Google Docs document
+1. Select text in a Google Docs document or Google Slides text box
 2. Press `Cmd+Ctrl+B` (Mac)
 3. The text will be formatted with Semi Bold weight (or Bold as fallback)
 

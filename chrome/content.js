@@ -222,7 +222,13 @@ function normaliseLabel(text) {
 }
 
 function menuItemLabel(item) {
-  return normaliseLabel(item.textContent || item.getAttribute('aria-label'));
+  let text = item.textContent || item.getAttribute('aria-label') || '';
+  // Fonts with weights end in a submenu arrow ("Montserrat►"); leave it out of the label
+  const arrow = item.querySelector('.goog-submenu-arrow');
+  if (arrow) {
+    text = text.replace(arrow.textContent, '');
+  }
+  return normaliseLabel(text);
 }
 
 // "Semi Bold", "SemiBold" and "Semibold" all become "semibold"
@@ -235,8 +241,10 @@ function findFontItem(menu, fontName) {
   const wanted = fontName.toLowerCase();
   const items = Array.from(getMenuItems(menu));
 
-  // Prefer an exact match so "Arial" doesn't pick "Arial Black" from the recent fonts list
+  // Prefer an exact match so "Arial" doesn't pick "Arial Black" from the recent fonts list,
+  // then the font the menu marks as current, then a partial match
   return items.find(item => menuItemLabel(item).toLowerCase() === wanted) ||
+    menu.querySelector('.goog-option-selected') ||
     items.find(item => menuItemLabel(item).toLowerCase().includes(wanted)) ||
     null;
 }
@@ -264,23 +272,17 @@ async function clickMenuItem(item) {
 
 async function closeMenus(fontDropdown) {
   try {
-    document.dispatchEvent(new KeyboardEvent('keydown', {
-      key: 'Escape',
-      keyCode: 27,
-      bubbles: true,
-      cancelable: true
-    }));
-
-    // If Escape didn't close it, a second mousedown on the dropdown toggles the menu shut
-    const closed = await waitFor(() => !findFontMenu(), 100);
-    if (!closed) {
+    // Docs ignores a synthetic Escape, but a second mousedown on the dropdown toggles the menus shut
+    if (findFontMenu()) {
       fontDropdown.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+      await waitFor(() => !findFontMenu(), 100);
     }
 
-    const editor = document.querySelector('.kix-appview-editor') ||
-                   document.querySelector('[role="textbox"]');
-    if (editor) {
-      editor.focus();
+    // Focus is left on the toolbar; hand it back to the iframe Docs types through
+    const typingTarget = document.querySelector('.docs-texteventtarget-iframe') ||
+                         document.querySelector('.kix-appview-editor');
+    if (typingTarget) {
+      typingTarget.focus();
     }
   } catch (error) {
     // Silent failure
